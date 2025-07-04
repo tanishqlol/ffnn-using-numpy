@@ -1,2 +1,2 @@
-/.env-ffnn-numpy
-/data
+.env-ffnn-numpy/
+data/
