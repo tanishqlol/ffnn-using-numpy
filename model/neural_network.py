@@ -11,7 +11,7 @@ def sigmoid(x):
     x = np.clip(x, -500, 500)
     return 1 / (1 + np.exp(-x))
 
-# we will define our feed forward neural network as a Python class
+# we will define our feed forward neural network using a Python class
 class Network:
     def __init__(self, layers: list[int]):
         np.random.seed(1)
@@ -184,11 +184,3 @@ class Network:
         """
         y_pred = self.forward_pass(X)
         return np.argmax(y_pred, axis=0)
-    
-    def predict_probability(self, X):
-        """
-        Get prediction probabilities
-        X: input data, shape (input_features, num_samples)
-        Returns: probabilities, shape (num_classes, num_samples)
-        """
-        return self.forward_pass(X)
