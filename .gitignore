@@ -1,3 +1,2 @@
-/.env-ffnn-numpy
-data/mnist_train.csv
+
 .env_ffnn-numpy/
